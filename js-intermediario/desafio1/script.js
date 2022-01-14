@@ -1,17 +1,30 @@
 "use strict";
-const images = [
-  { src: "./desafio1/desafio1/1.jpg" },
-  { src: "./desafio1/desafio1/2.jpg" },
-  { src: "./desafio1/desafio1/3.jpg" },
-  { src: "./desafio1/desafio1/4.jpg" },
-];
+const imagens = document.querySelectorAll(".imagem");
 
-let imagemFundo = document.getElementsByClassName("fundo");
+function avancar() {
+  for (let contador = 0; contador < imagens.length; contador++) {
+    console.log("ate aqui 1");
+    imagens[contador].classList.add("mostrar");
 
-const loadImages = (images, container) => {
-  images.forEach((element) => {
-        container.src = element.src
-  });
-};
+    if (contador >= 3) {
+      let setaOpaca = document.getElementById("seta-direita");
+      setaOpaca.classList.add("opacidade");
+    }
+  }
+}
 
-loadImages(images, imagemFundo);
+function voltar() {
+  for (let contador = 3; contador >= 0; contador--) {
+    console.log("ate aqui 2");
+    imagens[contador].classList.add("mostrar");
+
+    if (contador <= 0) {
+      let setaOpaca2 = document.getElementById("seta-esquerda");
+      setaOpaca2.classList.add("opacidade");
+    }
+  }
+}
+
+document.querySelector("#seta-direita").addEventListener("click", avancar());
+
+document.querySelector("#seta-esquerda").addEventListener("click", voltar());
