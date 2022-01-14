@@ -24,7 +24,8 @@ function voltar() {
     }
   }
 }
+console.log("ate aqui 3");
 
-document.querySelector("#seta-direita").addEventListener("click", avancar());
+document.getElementById("seta-direita").addEventListener("click", avancar);
 
-document.querySelector("#seta-esquerda").addEventListener("click", voltar());
+document.getElementById("seta-esquerda").addEventListener("click", voltar);
