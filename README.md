@@ -1,1 +1,2 @@
-﻿# js-basico-devquest
+﻿# js-devquest
+Desafios Javascript DevQuest
