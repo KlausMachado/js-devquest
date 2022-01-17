@@ -6,17 +6,14 @@
   font-family: "Roboto", sans-serif;
 }
 
-section {
+section .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   width: 100%;
   height: 100%;
-
-  padding: 10px;
-  padding-left: 50px;
-  position: absolute;
+  position: relative;
 }
 
 a img {
@@ -35,6 +32,10 @@ a img {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+
+  position: absolute;
+  top: 184px;
+  left: 180px;
 }
 
 .conteudo h1 {
@@ -61,34 +62,39 @@ a img {
 }
 
 .conteudo a {
-  /* width: 149px;
-  height: 35px; */
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
-  line-height: 35px;
 
   text-decoration: none;
   color: #c50000;
 }
 
 #seta-direita {
-  margin-left: 400px;
-  margin-right: 50px;
+  position: absolute;
+  top: 500px;
+  left: 1200px;
 }
 
 #seta-esquerda {
-  margin-left: 30px;
-  margin-right: 50px;
   transform: rotate(180deg);
+  position: absolute;
+  top: 500px;
+  left: 75px;
+}
+
+.imagem {
+  width: 0;
+  height: 0;
 }
 
 .mostrar {
   width: 100%;
   height: 100%;
   position: absolute;
+  left: -1px;
 }
 
 .opacidade {
-  opacity: 1;
+  opacity: 0.5;
 }
