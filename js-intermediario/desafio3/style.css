@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background: url(./desafio3/bg-repeat.jpg);
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.texto {
+  width: 326px;
+  height: 111px;
+}
+
+h1 {
+  width: 293px;
+  height: 46px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #ffffff;
+
+  margin-bottom: 10px;
+}
+
+p {
+  width: 306px;
+  height: 54px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+form {
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 20px 18px;
+}
+
+input {
+  width: 300px;
+  height: 35.11px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  margin-bottom: 15px;
+  padding-left: 10px;
+
+  font-weight: bold;
+  font-size: 15px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  margin-bottom: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  resize: none;
+}
+
+form p {
+  width: 145px;
+  height: 18px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+
+  margin-right: 155px;
+  margin-bottom: 25px;
+}
+
+.button {
+  background: #3ccc87;
+  color: white;
+  border: 1px;
+}
+
+.bordaVermelha {
+  border: 1px solid #d10000;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  height: 35.11px;
+}
+
+textarea.bordaVermelha {
+    width: 300px;
+    height: 100px;
+}
+
+.textoErro {
+  width: 123px;
+  height: 18px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  margin-right: 175px;
+  margin-bottom: 15px;
+
+  color: #d10000;
+}
+
+.bordaVerde {
+    border: 1px solid #19DE21;
+    margin-top: 15px;
+
+}
