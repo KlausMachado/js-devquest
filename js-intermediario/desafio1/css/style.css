@@ -22,8 +22,8 @@ a img {
 }
 
 .conteudo {
-  width: 500px;
-  height: 600px;
+  width: 480px;
+  height: 500px;
   padding: 60px;
 
   background: white;
@@ -41,8 +41,6 @@ a img {
 .conteudo h1 {
   width: 362px;
   height: 59px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 50px;
   line-height: 59px;
 

@@ -49,29 +49,29 @@ function textAreaValida() {
 }
 
 function verificar() {
-  inputNome.value == "" ? nomeInvalido() : nomeValido();
+  inputNome.value === "" ? nomeInvalido() : nomeValido();
 
-  inputEmail.value == "" ? emailInvalido() : emailValido();
+  inputEmail.value === "" ? emailInvalido() : emailValido();
 
-  inputTel.value == "" ? telInvalido() : telValido();
+  inputTel.value === "" ? telInvalido() : telValido();
 
-  textArea.value == "" ? textAreaInvalida() : textAreaValida();
+  textArea.value === "" ? textAreaInvalida() : textAreaValida();
 }
 
 enviar.addEventListener("click", verificar);
 
 inputNome.addEventListener("keypress", function () {
-  inputNome.value == "" ? nomeInvalido() : nomeValido();
+  inputNome.value === "" ? nomeInvalido() : nomeValido();
 });
 
 inputEmail.addEventListener("keypress", function () {
-  inputEmail.value == "" ? emailInvalido() : emailValido();
+  inputEmail.value === "" ? emailInvalido() : emailValido();
 });
 
 inputTel.addEventListener("keypress", function () {
-  inputTel.value == "" ? telInvalido() : telValido();
+  inputTel.value === "" ? telInvalido() : telValido();
 });
 
-textArea.addEventListener("blur", function () {
-  textArea.value == "" ? textAreaInvalida() : textAreaValida();
+textArea.addEventListener("keypress", function () {
+  textArea.value === "" ? textAreaInvalida() : textAreaValida();
 });

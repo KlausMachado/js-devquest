@@ -61,13 +61,12 @@ p {
   animation: go 1s;
 }
 
-.pergunta1,
-.pergunta2,
-.pergunta3 {
+
+.pergunta {
   display: flex;
 }
 
-.linha {
+hr {
   border: 1px solid #d5d5d5;
   margin-bottom: 20px;
   margin-top: 15px;

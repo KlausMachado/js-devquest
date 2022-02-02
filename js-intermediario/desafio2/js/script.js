@@ -7,9 +7,9 @@ let setas = document.getElementsByClassName("setaLink");
 let setasImg = document.getElementsByClassName("seta");
 
 function elementoEscondido() {
-  setasImg[0].src = "./desafio2/seta.png";
-  setasImg[1].src = "./desafio2/seta.png";
-  setasImg[2].src = "./desafio2/seta.png";
+  setasImg[0].src = "./imagens/seta.png";
+  setasImg[1].src = "./imagens/seta.png";
+  setasImg[2].src = "./imagens/seta.png";
 
   resposta1.setAttribute("hidden", "hidden");
   resposta2.setAttribute("hidden", "hidden");
@@ -21,15 +21,15 @@ for (let i = 0; i < setas.length; i++) {
   seta.addEventListener("click", () => {
     if (i === 0) {
       elementoEscondido();
-      setasImg[0].src = "./desafio2/seta-colorida.png";
+      setasImg[0].src = "./imagens/seta-colorida.png";
       resposta1.removeAttribute("hidden");
     } else if (i === 1) {
       elementoEscondido();
-      setasImg[1].src = "./desafio2/seta-colorida.png";
+      setasImg[1].src = "./imagens/seta-colorida.png";
       resposta2.removeAttribute("hidden");
     } else {
       elementoEscondido();
-      setasImg[2].src = "./desafio2/seta-colorida.png";
+      setasImg[2].src = "./imagens/seta-colorida.png";
       resposta3.removeAttribute("hidden");
     }
   });

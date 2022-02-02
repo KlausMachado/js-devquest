@@ -7,7 +7,7 @@
 }
 
 main {
-  background: url(./desafio3/bg-repeat.jpg);
+  background: url(./img/fundo.jpg);
   background-repeat: repeat;
   width: 100vw;
   height: 100vh;
