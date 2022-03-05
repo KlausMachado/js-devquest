@@ -121,6 +121,51 @@ main {
   line-height: 23px;
 }
 
+.container .profile-data .info .numberFollowers {
+  width: 900px;
+
+  margin-top: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .profile-data .info .numberFollowers p{
+  font-size: 15px;  
+  font-weight: 700;
+  line-height: 23px;
+
+  margin-bottom: 10px;
+}
+
+.container .profile-data .info .followers {
+  background-color: hotpink;
+  width: 100px;
+  height: 45px;
+  margin-left: 5px;
+  padding: 10px;
+
+  clip-path: ellipse(50% 50%);
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.container .profile-data .info .following {
+  background-color: hotpink;
+  width: 100px;
+  height: 45px;
+  padding: 10px;
+
+  clip-path: ellipse(50% 50%);
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 /* REPOSITORIES */
 
 .container .profile-data .repositories h2{

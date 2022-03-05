@@ -39,4 +39,6 @@ async function getUserData(userName) {
   user.setInfo(userResponse);
   user.setRepositories(repositoriesResponse);
   screen.renderUser(user);
+  console.log(user.numberFollowers)
+  console.log(user.numberFollowing)
 }

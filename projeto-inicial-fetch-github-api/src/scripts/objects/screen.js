@@ -3,12 +3,22 @@ const screen = {
   renderUser(user) {
     this.userProfile.innerHTML = `
             <div class="info">
-                <img src="${user.avatarUrl}" 
-                    alt="foto do perfil do usuario"/>
-                    <div class=data>
-                        <h1>${user.name ?? "Não possui nome cadastrado 😢"}</h1>
-                        <p>${user.bio ?? "Não possui bio cadastrada 😢"}</p>
+              <img src="${user.avatarUrl}" 
+                alt="foto do perfil do usuario"/>
+                  <div class=data>
+                    <h1>${user.name ?? "Não possui nome cadastrado 😢"}</h1>
+                    <p>${user.bio ?? "Não possui bio cadastrada 😢"}</p>
+                  </div>
+                  <div class="numberFollowers">
+                    <div>
+                      <p>Seguindo</p>
+                      <h2 class="following">${user.numberFollowing}</h2> 
                     </div>
+                    <div>
+                      <p>Seguidores</p>
+                      <h2 class="followers">${user.numberFollowers}</h2> 
+                    </div>
+                  </div>     
             </div>
             `;
     let repositoriesItens = "";
